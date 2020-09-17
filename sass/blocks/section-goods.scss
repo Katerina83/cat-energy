@@ -1,0 +1,127 @@
+.section-goods {
+  border-top: 1px solid $basic-color-line;
+  border-bottom: 1px solid $basic-color-line;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $basic-border-catalog;
+    width: 324px;
+    height: 410px;
+    margin: 0;
+    margin-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 407px;
+  }
+}
+
+.section-goods__wrapper {
+  margin: 0 25px 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 35px 40px;
+  }
+}
+
+.section-goods__img {
+  margin: 26px 120px 17px;
+  fill: $basic-border-catalog;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin: 26px 132px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 56px 47px;
+  }
+}
+
+.section-goods__title {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $special-black;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 49px 95px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.section-goods__subtitle {
+  @include fontArial;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special_dark-grey;
+  padding-bottom: 15px;
+  margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 93px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 87px;
+  }
+}
+
+.section-goods__button {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: 0px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  padding: 9px 87px;
+  border: none;
+  width: 169px;
+  height: 40px;
+  background: $basic-background;
+
+  @include link;
+
+  &:hover {
+    background: $special-gray;
+  }
+
+  &:active {
+    background: $special-gray;
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 79px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 39px;
+    margin-left: 0;
+  }
+}

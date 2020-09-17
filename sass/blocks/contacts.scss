@@ -1,0 +1,235 @@
+.contacts {
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 51px;
+    margin-bottom: 25px;
+  }
+}
+
+.contacts__wrapper-subtitle {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    height: 3px;
+    margin-top: 4px;
+    background-color: $basic-dark-green;
+    top: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 0;
+      width: 100%;
+      top: 15px;
+    }
+  }
+}
+
+.contacts__contacts-subtitle {
+  @include fontOswald;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 32px;
+  padding-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 25px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (65px, 110px, 1440px);
+    margin-bottom: 36px;
+  }
+}
+
+.contacts__contacts-span {
+  background-color: $basic-white;
+  width: 215px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+}
+
+.contacts__container {
+  margin-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include grid;
+    @include conteiner (110px, 110px, 1440px);
+  }
+}
+
+.contacts-wrapper {
+  @include flex;
+  flex-wrap: nowrap;
+  width: 284px;
+  align-items: baseline;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 635px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.contacts__label,
+.contacts__input {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contacts__input {
+  border: 1px solid $basic-border-input;
+  outline: none;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $basic-border-catalog;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 0 1px $special_dark-grey;
+  }
+
+  &:focus:invalid {
+    box-shadow: inset 0 0 0 1px $basic-red;
+  }
+}
+
+.contacts__input-email {
+  width: 219px;
+  height: 45px;
+  padding: 9px 35px 13px 15px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 551px;
+    height: 52px;
+    padding: 10px 50px 10px 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 486px;
+    padding: 10px 50px 10px 17px;
+  }
+}
+
+.contacts__label-phone {
+  @media (min-width: $tablet-width) {
+    width: 656px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 595px;
+  }
+}
+
+.contacts__input-phone {
+  width: 204px;
+  height: 45px;
+  padding: 9px 40px 13px 15px;
+  margin-bottom: 27px;
+  margin-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 535px;
+    height: 52px;
+    padding: 10px 50px 10px 21px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 472px;
+    padding: 10px 50px 10px 15px;
+  }
+}
+
+.contacts__email-img,
+.contacts__phone-img {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+
+  &:active {
+    fill: $basic-green;
+  }
+
+  &:invalid {
+    fill: $basic-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+    top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 19px;
+    top: 20px;
+  }
+}
+
+.contacts__phone-img {
+  right: 14px;
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+    top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+    top: 13px;
+  }
+}
+
+.contacts__input:required:focus ~ .contacts__email-img,
+.contacts__input:required:active ~ .contacts__email-img {
+  fill: $basic-green;
+}
+
+.contacts__input:required:focus ~ .contacts__phone-img,
+.contacts__input:required:active ~ .contacts__phone-img {
+  fill: $basic-green;
+}

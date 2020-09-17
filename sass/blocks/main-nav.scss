@@ -1,0 +1,43 @@
+.main-nav {
+  margin-top: 0;
+}
+
+.main-nav__wrapper {
+  @include fontOswald;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 320px;
+  margin-top: -9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 16px;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+    border-bottom: none;
+    margin-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}

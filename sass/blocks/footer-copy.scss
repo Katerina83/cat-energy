@@ -1,0 +1,7 @@
+.footer-copy__link {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: $font-basic-line;
+  color: $special_dark-grey;
+  text-decoration: none;
+}

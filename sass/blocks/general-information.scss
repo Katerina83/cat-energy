@@ -1,0 +1,123 @@
+.general-information {
+  border: none;
+  padding-left: 20px;
+  border-bottom: 1px solid $basic-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
+  }
+}
+
+.general-information__label,
+.general-information__input {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.general-information__input {
+  border: 1px solid $basic-border-input;
+  outline: none;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $basic-border-catalog;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 0 1px $special_dark-grey;
+  }
+
+  &:invalid {
+    box-shadow: inset 0 0 0 1px $basic-red;
+  }
+}
+
+.general-information__wrapper {
+  @include flex;
+  width: 281px;
+  align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+    flex-wrap: nowrap;
+  }
+}
+
+.general-information__input-name {
+  padding: 9px 50px 13px 10px;
+  width: 229px;
+  height: 45px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 50px 13px 19px;
+    width: 568px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 50px 11px 19px;
+    width: 506px;
+    margin-bottom: 20px;
+  }
+}
+
+.general-information__input-weight {
+  padding: 9px 50px 13px 12px;
+  width: 204px;
+  height: 45px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 50px 13px 19px;
+    width: 536px;
+    height: 52px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 50px 11px 19px;
+    width: 475px;
+  }
+}
+
+.general-information__label-age {
+  display: none;
+}
+
+.general-information__input-age {
+  padding: 9px 50px 13px 12px;
+  width: 172px;
+  height: 45px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 19px 50px 11px 14px;
+    width: 490px;
+    height: 52px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 41px 11px 11px;
+    width: 430px;
+  }
+}

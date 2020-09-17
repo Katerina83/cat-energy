@@ -1,0 +1,118 @@
+.first-filter {
+  border: none;
+  border-bottom: 1px solid $basic-border;
+  padding: 0 17px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $basic-border;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 196px;
+  }
+}
+
+.first-filter__wrapper {
+  @include flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin: 23px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 30px 0;
+  }
+}
+
+.first-filter__label {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 45px;
+
+  @include link;
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 57px;
+  }
+}
+
+.first-filter__input {
+  display: none;
+  outline: none;
+}
+
+.first-filter__input + .first-filter__label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $basic-border-catalog;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.first-filter__input:checked + .first-filter__label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 3px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 13px;
+      top: 8px;
+    }
+  }
+}
+
+.first-filter__input:checked + .first-filter__label:hover::before {
+  border-color: $basic-border-hover;
+}
+
+.first-filter__wrapper-weight {
+  @media (min-width: $desktop-width) {
+    margin-top: -6px;
+  }
+}
+
+.first-filter__wrapper-help {
+  @media (min-width: $desktop-width) {
+    margin-top: -5px;
+  }
+}

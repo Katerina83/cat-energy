@@ -1,0 +1,11 @@
+//body
+.page {
+  @include fontOswald;
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $basic-white;
+}

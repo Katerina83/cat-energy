@@ -1,0 +1,56 @@
+.form__contacts {
+  border: none;
+  padding-right: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.form__btn {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 175px 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (110px, 500px, 1440px);
+  }
+}
+
+.form__button {
+  @include btnCatalog;
+  line-height: 20px;
+  padding: 7px 78px 10px;
+  border: none;
+  margin-left: 20px;
+  margin-bottom: 5px;
+
+  @include link;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 45px;
+    width: 282px;
+    height: 52px;
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    padding: 13px 188px;
+  }
+}
+
+.form__column {
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include grid;
+    @include conteiner (110px, 110px, 1440px);
+  }
+}

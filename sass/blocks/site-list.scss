@@ -1,0 +1,77 @@
+.site-list__item {
+  border-top: 1px solid $basic-color-line;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: auto;
+    display: inline-block;
+    margin-left: 33px;
+  }
+}
+
+.site-list--border {
+  border-bottom: 1px solid $basic-color-line;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.site-list__link {
+  @include fontOswald;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 22px 0 23px;
+  letter-spacing: 1px;
+  color: $basic-black;
+  display: block;
+
+  @include link;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+    padding: 0;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.site-list__link--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-green;
+    padding-bottom: 5px;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.site-list__link--color {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+}
+
+.site-list__link--active.site-list__link--color {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-white;
+  }
+}

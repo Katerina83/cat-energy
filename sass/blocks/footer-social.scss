@@ -1,0 +1,17 @@
+.footer-social {
+  border-bottom: 1px solid $basic-border;
+  border-top: 1px solid $basic-border;
+  margin-bottom: 18px;
+  margin-top: -5px;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}

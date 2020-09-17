@@ -1,0 +1,77 @@
+.selection {
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    @include conteiner (0, 0, 768px);
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (0, 0, auto);
+    margin-top: 50px;
+  }
+}
+
+.selection__form-title {
+  @include fontOswald;
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 36px;
+  padding-top: 25px;
+
+  @include conteiner (20px, 20px, 320px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 54px;
+
+    @include conteiner (30px, 30px, 768px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (110px, 110px, 1440px);
+  }
+}
+
+.selection__form-subtitle {
+  @include fontOswald;
+  text-transform: uppercase;
+  padding-bottom: 37px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @include conteiner (20px, 20px, 320px);
+
+  @media (min-width: $tablet-width) {
+    @include conteiner (0, 0, 768px);
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 370px 66px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (0, 0, 1440px);
+    padding: 0 1000px 66px 110px;
+  }
+}
+
+.selection__form-profile {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    padding-left: 0;
+  }
+}
+
+.selection__required-fields {
+  @include fontArial;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,105 @@
+.section-item {
+  margin-top: 13px;
+  margin-bottom: 24px;
+  border-top: 1px solid $basic-border-catalog;
+  border-bottom: 1px solid $basic-border-catalog;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $basic-border-catalog;
+    padding: 10px 20px 33px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex;
+    flex-wrap: nowrap;
+    border-left: none;
+    border-right: none;
+    width: 896px;
+    padding: 10px 0;
+  }
+}
+
+.section-item__title {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.section-item__subtitle {
+  @include fontOswald;
+  font-size: 14px;
+  line-height: 14px;
+  align-items: center;
+  text-align: center;
+  color: $special_dark-grey;
+  margin: 0;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 95px;
+    margin-right: 18px;
+  }
+}
+
+.section-item__button {
+  @include btnCatalog;
+  @include link;
+
+  &:active,
+  &:focus {
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover {
+    background-color: $basic-dark-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 285px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 90px;
+    width: 244px;
+    height: 40px;
+    line-height: 20px;
+    margin-top: 9px;
+  }
+}
+
+.section-item__div {
+  @media (min-width: $tablet-width) {
+    @include flex;
+    margin: 0 20px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 630px;
+    margin: 0;
+  }
+}
+
+.section-item__wrapper {
+  @include flex;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 0 0;
+    justify-content: flex-end;
+  }
+}

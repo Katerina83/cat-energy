@@ -1,0 +1,60 @@
+@mixin fontOswald {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  color: $basic-black;
+}
+
+@mixin fontArial {
+  font-family: $font-arial;
+  font-style: normal;
+  font-weight: normal;
+  color: $basic-black;
+}
+
+@mixin btnCatalog {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  padding: 7px 109px;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: 569px 569px;
+  column-gap: 80px;
+}
+
+@mixin conteiner ($left, $right, $width) {
+  margin: 0 auto;
+  padding-left: $left;
+  padding-right: $right;
+  width: $width;
+}
+
+@mixin background-namber {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url("../img/one.png");
+  background-repeat: no-repeat;
+  background-position: 125px 40px;
+  height: 280px;
+}
+
+@mixin link {
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.copyright__link {
+  @include fontArial;
+  font-size: 16px;
+  line-height: $font-basic-line;
+  color: $special_dark-grey;
+  text-decoration: none;
+
+  @include link;
+  @include flex;
+  width: 280px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    width: 163px;
+  }
+}
+
+.copyright__link-form {
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+  }
+}
+
+.copyright__img {
+  fill: $basic-background-social;
+  margin-top: -10px;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}

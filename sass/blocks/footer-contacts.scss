@@ -1,0 +1,115 @@
+.footer-contacts {
+  @include flex;
+  margin: 0 20px 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.footer-contacts--bg {
+  @media (min-width: $mobile-width) and (max-width: 1439px) {
+    background: $basic-background;
+    margin: 0;
+    padding: 27px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 30px;
+  }
+}
+
+.footer-contacts__wrapper {
+  @include flex;
+  flex-wrap: nowrap;
+  margin-top: -14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 47px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex;
+    flex-wrap: nowrap;
+    width: 570px;
+    height: 201px;
+    background-color: $basic-white;
+    padding: 66px 89px 51px 76px;
+    position: absolute;
+    top: 48px;
+    left: calc(50% - 650px);
+    z-index: 2;
+  }
+}
+
+.footer-contacts__wrapper--bg {
+  @media (min-width: $mobile-width) and (max-width: 737px) {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 96px 70px;
+  }
+}
+
+.footer-contacts__contacts-subtitle {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: $font-basic-line;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 87px;
+    margin-top: 0;
+  }
+}
+
+.footer-contacts__contacts-location {
+  @include fontArial;
+  font-size: $font-basic-size;
+  line-height: 20px;
+  color: $special_dark-grey;
+  padding-top: 14px;
+  width: 140px;
+  margin-right: 3px;
+
+  @include flex;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    padding-top: 20px;
+    width: 159px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    text-align: start;
+  }
+}
+
+.footer-contacts__span {
+  margin-top: -15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+    padding-left: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    padding-left: 0;
+  }
+}
